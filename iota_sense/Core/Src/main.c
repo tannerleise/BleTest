@@ -71,6 +71,7 @@ static void MX_RF_Init(void);
   */
 int main(void)
 {
+   int x = 1;
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
