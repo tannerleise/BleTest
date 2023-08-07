@@ -52,7 +52,6 @@ RTC_HandleTypeDef hrtc;
 void SystemClock_Config(void);
 void PeriphCommonClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_MEMORYMAP_Init(void);
 static void MX_IPCC_Init(void);
 static void MX_RTC_Init(void);
 static void MX_RF_Init(void);
@@ -71,7 +70,6 @@ static void MX_RF_Init(void);
   */
 int main(void)
 {
-   int x = 1;
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -102,7 +100,6 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_MEMORYMAP_Init();
   MX_RTC_Init();
   MX_RF_Init();
   /* USER CODE BEGIN 2 */
@@ -229,27 +226,6 @@ static void MX_IPCC_Init(void)
 }
 
 /**
-  * @brief MEMORYMAP Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_MEMORYMAP_Init(void)
-{
-
-  /* USER CODE BEGIN MEMORYMAP_Init 0 */
-
-  /* USER CODE END MEMORYMAP_Init 0 */
-
-  /* USER CODE BEGIN MEMORYMAP_Init 1 */
-
-  /* USER CODE END MEMORYMAP_Init 1 */
-  /* USER CODE BEGIN MEMORYMAP_Init 2 */
-
-  /* USER CODE END MEMORYMAP_Init 2 */
-
-}
-
-/**
   * @brief RF Initialization Function
   * @param None
   * @retval None
@@ -303,7 +279,7 @@ static void MX_RTC_Init(void)
 
   /** Enable the WakeUp
   */
-  if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
+  if (HAL_RTCEx_SetWakeUpTimer(&hrtc, 0, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
   {
     Error_Handler();
   }

@@ -76,4 +76,3 @@
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c:1890:12:hci_le_read_rf_path_compensation	3
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c:1910:12:hci_le_write_rf_path_compensation	2
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c:1934:12:hci_le_set_privacy_mode	2
-../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_hci_le.c:1961:12:hci_le_generate_dhkey_v2	2

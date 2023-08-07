@@ -10,12 +10,12 @@
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:334:12:aci_gap_init	320	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:370:12:aci_gap_set_non_connectable	312	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:394:12:aci_gap_set_undirected_connectable	320	static
-../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:424:12:aci_gap_peripheral_security_req	312	static
+../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:424:12:aci_gap_slave_security_req	312	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:446:12:aci_gap_update_adv_data	312	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:470:12:aci_gap_delete_ad_type	312	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:491:12:aci_gap_get_security_level	320	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:519:12:aci_gap_set_event_mask	312	static
-../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:540:12:aci_gap_configure_filter_accept_list	40	static
+../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:540:12:aci_gap_configure_whitelist	40	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:554:12:aci_gap_terminate	312	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:579:12:aci_gap_clear_security_db	40	static
 ../Middlewares/ST/STM32_WPAN/ble/core/auto/ble_gap_aci.c:593:12:aci_gap_allow_rebond	312	static

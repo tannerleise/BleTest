@@ -3,7 +3,7 @@
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c:99:18:SHCI_C2_FUS_FwDelete	32	static
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c:117:18:SHCI_C2_FUS_UpdateAuthKey	40	static
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c:135:18:SHCI_C2_FUS_LockAuthKey	32	static
-../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c:153:18:SHCI_C2_FUS_StoreUsrKey	48	static
+../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c:153:18:SHCI_C2_FUS_StoreUsrKey	40	static
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c:187:18:SHCI_C2_FUS_LoadUsrKey	40	static
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c:207:18:SHCI_C2_FUS_StartWs	32	static
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci/shci.c:225:18:SHCI_C2_FUS_LockUsrKey	40	static

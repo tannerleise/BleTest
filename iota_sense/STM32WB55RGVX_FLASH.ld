@@ -175,7 +175,7 @@ SECTIONS
   .MB_MEM2 :
   {
     _sMB_MEM2 = . ;
-    *(MB_MEM2) ;
+    *(.MB_MEM2) ;
     _eMB_MEM2 = . ;
   } >RAM_SHARED AT> FLASH
 }

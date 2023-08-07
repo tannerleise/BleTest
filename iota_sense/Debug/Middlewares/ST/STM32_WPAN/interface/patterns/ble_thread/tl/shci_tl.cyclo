@@ -7,4 +7,4 @@
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.c:219:13:TlCmdEvtReceived	1
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.c:227:13:TlUserEvtReceived	1
 ../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.c:236:13:shci_cmd_resp_wait	2
-../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.c:245:13:shci_cmd_resp_release	1
+../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/shci_tl.c:246:13:shci_cmd_resp_release	1

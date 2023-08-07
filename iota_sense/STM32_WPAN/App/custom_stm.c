@@ -30,10 +30,6 @@
 typedef struct{
   uint16_t  CustomMysvcHdle;                    /**< mySvc handle */
   uint16_t  CustomCharwriteHdle;                  /**< CharWrite handle */
-/* USER CODE BEGIN Context */
-  /* Place holder for Characteristic Descriptors Handle*/
-
-/* USER CODE END Context */
 }CustomContext_t;
 
 /* USER CODE BEGIN PTD */
@@ -218,8 +214,6 @@ void SVCCTL_InitCustomSvc(void)
 
   Char_UUID_t  uuid;
   tBleStatus ret = BLE_STATUS_INVALID_PARAMS;
-  uint8_t max_attr_record;
-
   /* USER CODE BEGIN SVCCTL_InitCustomSvc_1 */
 
   /* USER CODE END SVCCTL_InitCustomSvc_1 */
@@ -236,22 +230,13 @@ void SVCCTL_InitCustomSvc(void)
    * service_max_attribute_record = 1 for mySvc +
    *                                2 for CharWrite +
    *                              = 3
-   *
-   * This value doesn't take into account number of descriptors manually added
-   * In case of descriptors addded, please update the max_attr_record value accordingly in the next SVCCTL_InitService User Section
    */
-  max_attr_record = 3;
-
-  /* USER CODE BEGIN SVCCTL_InitService */
-  /* max_attr_record to be updated if descriptors have been added */
-
-  /* USER CODE END SVCCTL_InitService */
 
   COPY_MYSVC_UUID(uuid.Char_UUID_128);
   ret = aci_gatt_add_service(UUID_TYPE_128,
                              (Service_UUID_t *) &uuid,
                              PRIMARY_SERVICE,
-                             max_attr_record,
+                             3,
                              &(CustomContext.CustomMysvcHdle));
   if (ret != BLE_STATUS_SUCCESS)
   {
@@ -283,11 +268,6 @@ void SVCCTL_InitCustomSvc(void)
   {
     APP_DBG_MSG("  Success: aci_gatt_add_char command   : CHARWRITE \n\r");
   }
-
-  /* USER CODE BEGIN SVCCTL_Init_Service1_Char1/ */
-  /* Place holder for Characteristic Descriptors */
-
-  /* USER CODE END SVCCTL_Init_Service1_Char1 */
 
   /* USER CODE BEGIN SVCCTL_InitCustomSvc_2 */
 
